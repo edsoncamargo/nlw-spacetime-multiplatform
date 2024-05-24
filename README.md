@@ -1,6 +1,6 @@
 # Spacetime
 
-![Spacetime Logo](./mobile/assets/icon.png)
+![Spacetime Logo](./mobile/src/assets/images/logo.svg)
 
 **Spacetime** is an application for remembering memories, where the user can add texts, photos and videos of important events in their life to a timeline, organized by month and year. Available as both a mobile app and web version, Spacetime offers a unified, accessible experience on any device. This project was developed as part of a hands-on session during the NLW Ignite (Rocketseat).
 
@@ -49,7 +49,7 @@ The following are the key technologies and tools used in the development of this
 
 JWT (JSON Web Token) é uma forma compacta e segura de representar informações entre duas partes, frequentemente usada para autenticação e autorização em aplicações web.
 
-## Screenshots
+<!-- ## Screenshots
 
 ### Web
 
@@ -77,7 +77,7 @@ JWT (JSON Web Token) é uma forma compacta e segura de representar informações
 
 #### Edit Habit
 
-![Edit Habit](./mobile/assets/screenshots/2.png)
+![Edit Habit](./mobile/assets/screenshots/2.png) -->
 
 ## Installation
 
@@ -86,8 +86,8 @@ To run the app locally, follow these steps:
 Clone the repository:
 
 ```bash
-git clone https://github.com/edsoncamargo/my-goals-app
-cd your-path/my-goals-app
+git clone https://github.com/edsoncamargo/nlw-spacetime-multiplatform.git
+cd your-path/nlw-spacetime-multiplatform
 ```
 
 Next, follow the steps below:
