@@ -1,6 +1,6 @@
 # Spacetime
 
-![Spacetime Logo](./web/src/app/icon.svg)
+![Spacetime Logo](./web/src/assets/images/logo.svg)
 
 **Spacetime** is an application for remembering memories, where the user can add texts, photos and videos of important events in their life to a timeline, organized by month and year. Available as both a mobile app and web version, Spacetime offers a unified, accessible experience on any device. This project was developed as part of a hands-on session during the NLW Ignite (Rocketseat).
 
