@@ -75,7 +75,7 @@ export function NewMemoryForm() {
       <textarea
         name="content"
         spellCheck={false}
-        className="mt-6 w-full flex-1 resize-none rounded border-0 bg-transparent p-0 text-lg leading-relaxed text-gray-100 placeholder:text-gray-400 focus:ring-0"
+        className="mt-6 min-h-[180px] w-full flex-1 resize-none rounded border-0 bg-transparent p-0 text-lg leading-relaxed text-gray-100 placeholder:text-gray-400 focus:ring-0"
         placeholder="Fique livre para adicionar fotos, vídeos e relatos sobre essa experiência que você quer lembrar para sempre."
       />
 

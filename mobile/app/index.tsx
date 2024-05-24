@@ -27,21 +27,25 @@ export default function App() {
       clientId: "7fe539046651df4c8ce1",
       scopes: ["identity"],
       redirectUri: makeRedirectUri({
-        scheme: "st",
+        scheme: "spacetime",
       }),
     },
     discovery
   );
 
   async function handleGithubOAuthCode(code: string) {
-    const response = await api.post("/register", {
-      code,
-    });
+    try {
+      const response = await api.post("/register", {
+        code,
+      });
 
-    const token = response.data;
-    await SecureStore.setItemAsync("token", token);
-
-    router.push("/memories");
+      const token = response.data;
+      await SecureStore.setItemAsync("token", token);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      router.push("/memories");
+    }
   }
 
   useEffect(() => {

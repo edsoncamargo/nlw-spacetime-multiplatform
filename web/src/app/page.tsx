@@ -9,7 +9,7 @@ import Link from "next/link";
 
 dayjs.locale(ptBR);
 
-interface Memory {
+interface MemoryProps {
   coverUrl: string;
   excerpt: string;
   id: string;
@@ -30,7 +30,7 @@ export default async function Home() {
     },
   });
 
-  const memories: Memory[] = response.data;
+  const memories: MemoryProps[] = response.data;
 
   if (memories.length === 0) {
     return <EmptyMemories />;
@@ -58,7 +58,7 @@ export default async function Home() {
             </p>
 
             <Link
-              href={`/memories/${memory.id}`}
+              href={`/memories/memory/${memory.id}`}
               className="align-center flex flex-row gap-2 text-gray-200 underline hover:text-gray-100"
             >
               <span className="text-sm">Ler mais</span>

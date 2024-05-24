@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ImageBackground } from "react-native";
+import { ImageBackground, Text, View } from "react-native";
 import { SplashScreen, Stack, useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { styled } from "nativewind";
@@ -31,7 +31,11 @@ export default function Layout() {
   });
 
   if (hasLoadedFonts === false) {
-    return <SplashScreen />;
+    return (
+      <View className="flex-1 items-center justify-center">
+        <Text>Loading...</Text>
+      </View>
+    );
   }
 
   return (

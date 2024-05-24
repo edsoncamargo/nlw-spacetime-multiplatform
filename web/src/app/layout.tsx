@@ -1,5 +1,5 @@
 import Left from "@/components/Left";
-import "./globals.scss";
+import "./global.css";
 import {
   Roboto_Flex as Roboto,
   Bai_Jamjuree as BaiJamjuree,
